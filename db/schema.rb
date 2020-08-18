@@ -424,7 +424,7 @@ ActiveRecord::Schema.define(version: 20200814160434) do
     t.string "logo_url"
     t.boolean "read_consultation_principles", default: false
     t.boolean "show_brexit_no_deal_content_notice", default: false
-    t.boolean "all_nation_applicability"
+    t.boolean "all_nation_applicability", default: false
     t.index ["alternative_format_provider_id"], name: "index_editions_on_alternative_format_provider_id"
     t.index ["closing_at"], name: "index_editions_on_closing_at"
     t.index ["document_id"], name: "index_editions_on_document_id"
